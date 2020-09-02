@@ -305,6 +305,11 @@ function myajax_data(){
 
 }
 
+register_rest_field( 'page', 'metadata', array(
+    'get_callback' => function ( $data ) {
+        return get_post_meta( $data['id'], '', '' );
+    }, ));
+
 function action_crate_feedback_from_front(){
     if($_POST['email'] && $_POST['name'] && $_POST['company'] && $_POST['company_activity'] && $_POST['question']) {
         $post_id = wp_insert_post(array(

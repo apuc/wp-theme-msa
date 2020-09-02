@@ -47,7 +47,7 @@ export default {
         }
     },
     mounted() {
-        axios.get('http://industrial.loc/wp-json/wp/v2/msa_slider/')
+        axios.get(`${process.env.VUE_APP_LOCAL_URL}/wp-json/wp/v2/msa_slider/`)
             .then(res => {
               res.data.forEach((item) => {
                 this.sliderItems.push({

@@ -6,7 +6,7 @@ Vue.use(Vuex)
 
 const emitAction = (mutation, commit, payload) => {
   return new Promise((resolve, reject) => {
-    axios.get('http://industrial.loc/wp-json/wp/v2/pages?slug='+payload)
+    axios.get(`${process.env.VUE_APP_LOCAL_URL}/wp-json/wp/v2/pages?slug=`+payload)
       .then(res => {
         commit(mutation, res.data);
         resolve(res.data);
