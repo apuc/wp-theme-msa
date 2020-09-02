@@ -1,0 +1,30 @@
+{
+    "dynamic": {
+        "1": {
+            "content": "",
+            "slider": {}
+        },
+        "2": {
+            "content": "",
+            "slider": {}
+        },
+        "3": {
+            "content": "",
+            "slider": {}
+        }
+    },
+    "static": {
+        "4": {
+            "content": "",
+            "menu": {}
+        },
+        "5": {
+            "content": "",
+            "menu": {}
+        },
+        "6": {
+            "content": "",
+            "menu": {}
+        }
+    }
+}
